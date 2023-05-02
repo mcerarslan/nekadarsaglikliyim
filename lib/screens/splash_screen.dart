@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:sagliginihesapla/screens/bmi.dart';
 import 'package:sagliginihesapla/screens/home.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3), (){
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => BmiScreen())
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()),
       );
     });
   }

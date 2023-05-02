@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sagliginihesapla/screens/home.dart';
 
 class BmiScreen extends StatefulWidget {
-  const BmiScreen({Key? key}) : super(key: key);
+  const BmiScreen({Key? key,}) : super(key: key);
 
   @override
   State<BmiScreen> createState() => _BmiScreenState();
@@ -16,17 +17,38 @@ class _BmiScreenState extends State<BmiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Ne Kadar Sağlıklıyım?",
-          style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700),
-        ),
-        centerTitle: true,
-        elevation: 0,
-      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 60,),
+        Padding(padding: EdgeInsets.only(
+            left: 15,
+            right: 15
+        ),
+          child: Row(
+            children: [
+              Positioned(
+                top: 60,
+                left: 20,
+                child: InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen())),
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.green,
+                    ),
+                    child: Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
             SizedBox(height: 40,),
             Center(
               child: Container(
@@ -35,7 +57,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 50,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
