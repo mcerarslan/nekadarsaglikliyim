@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sagliginihesapla/screens/home.dart';
 
 class BmiScreen extends StatefulWidget {
   const BmiScreen({Key? key,}) : super(key: key);
@@ -21,7 +20,7 @@ class _BmiScreenState extends State<BmiScreen> {
         child: Column(
           children: [
             SizedBox(height: 60,),
-        Padding(padding: EdgeInsets.only(
+           Padding(padding: EdgeInsets.only(
             left: 15,
             right: 15
         ),
@@ -31,7 +30,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 top: 60,
                 left: 20,
                 child: InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen())),
+                  onTap: () => Navigator.pop(context),
                   child: Container(
                     height: 40,
                     width: 40,
@@ -57,12 +56,22 @@ class _BmiScreenState extends State<BmiScreen> {
                 ),
               ),
             ),
+            /*Padding(
+              padding: const EdgeInsets.only(left: 8.0,right: 8, top: 8,),
+              child: Center(
+                child: Container(
+                  child: Text(
+                    "Yetişkin bir insanın ağırlığının, boyuna göre normal olup olmadığını gösteren bir parametredir. İngilizcede Body Mass Index veya kısa adıyla BMI şeklinde ifade edilmektedir. Aşağıda görülen Vücut Kitle Endeksi (VKE, VKİ veya BKİ) tablosunda kilogram cinsinden ağırlık ve metre cinsinden boyun kesiştiği noktanın içinde bulunan alan ile kilonun ideal olup olmadığı tespit edilebilmektedir. Eğer mevcut ağırlığınız idealin altında ya da üstünde ise ideal noktaya ulaşabilmek için izlenecek yol, kısa sürede fazla miktarda kilo kaybetmek ya da almak değil, adım adım sağlıklı kiloya ulaşmak ve bu düzeyi uzun dönemde korumaktır.", style: TextStyle(fontSize: 14,  color: Colors.black54),
+                  ),
+                ),
+              ),
+            ), */
             SizedBox(height: 50,),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 150,
+                  width: 120,
                   child: TextField(
                     controller: _boyController,
                     style: TextStyle(
@@ -83,8 +92,9 @@ class _BmiScreenState extends State<BmiScreen> {
                     ),
                   ),
                 ),
+                SizedBox(width: 10,),
                 Container(
-                  width: 150,
+                  width: 120,
                   child: TextField(
                     controller: _kiloController,
                     style: TextStyle(

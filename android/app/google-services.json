@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "104263155000",
+    "project_id": "nekadarsaglikliyimlogin",
+    "storage_bucket": "nekadarsaglikliyimlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104263155000:android:dcc9c20eacf677284b15cd",
+        "android_client_info": {
+          "package_name": "com.example.sagliginihesapla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104263155000-aganaulfh8gijdabffv047b1oi95a6bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sagliginihesapla",
+            "certificate_hash": "06c72ffead7cf21bb37caae8bdea1756da2cd851"
+          }
+        },
+        {
+          "client_id": "104263155000-rng3cgspboqqk2u7boei0rh7c9j674ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMPx3HeQCBgyC7ze8NVbFZMN4we3qEtvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104263155000-rng3cgspboqqk2u7boei0rh7c9j674ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
